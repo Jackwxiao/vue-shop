@@ -2,17 +2,13 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import axios from 'axios'
-import './plugins/element.js'
+// import './plugins/element.js'
 import './assets/css/global.css'
 import './assets/css/icon.css'
 import VueQuillEditor from 'vue-quill-editor'
-import 'quill/dist/quill.core.css'
-import 'quill/dist/quill.snow.css'
-import 'quill/dist/quill.bubble.css'
 import ZkTable from 'vue-table-with-tree-grid'
 // 导入 nprogress 包对应的JS和css
 import NProgress from 'nprogress'
-import 'nprogress/nprogress.css'
 
 Vue.component('tree-table', ZkTable)
 
