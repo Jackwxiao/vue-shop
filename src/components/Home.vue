@@ -73,7 +73,6 @@ export default {
     // 获取左侧菜单 get返回的是promise，用await修饰一下
     async getMenuList(){
       const { data: res } = await this.$http.get('menus')
-      console.log(res)
       if (res.meta.status !== 200) return this.$message.console.error('res.meta.msg')
       this.menulist = res.data
     },
