@@ -1,5 +1,9 @@
 module.exports = {
     chainWebpack: config => {
+        publicPath: process.env.NODE_ENV === 'production'
+        ? '/shop-online/dist/'
+        : '/'
+        
         // 发布模式
         config.when(process.env.NODE_ENV === 'production', config => {
             config.entry('app').clear().add('./src/main-prod.js')
