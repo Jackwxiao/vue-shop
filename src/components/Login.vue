@@ -2,7 +2,7 @@
   <div class="loginWrapper">
     <div class="loginBox">
       <div class="avaterBox">
-        <img src="../assets/images/logo.png" alt="picture" />
+        <img src="../assets/images/home-header.png" alt="picture" />
       </div>
       <!-- 表单区域 -->
       <el-form ref="loginFormRef" :model="formLogin" :rules="formLoginRules" label-width="0" class="loginForm">
@@ -69,7 +69,7 @@ export default {
 <style lang="less" scoped>
 .loginWrapper {
   height: 100%;
-  background-color: cadetblue;
+  background-color: #2C3848;
 }
 .loginBox {
   position: absolute;
