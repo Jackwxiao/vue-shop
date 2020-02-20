@@ -1,8 +1,9 @@
 module.exports = {
-    chainWebpack: config => {
-        publicPath: process.env.NODE_ENV === 'production'
+    publicPath: process.env.NODE_ENV === 'production'
         ? '/shop-online/dist/'
         : '/'
+,
+    chainWebpack: config => {
         
         // 发布模式
         config.when(process.env.NODE_ENV === 'production', config => {
@@ -36,3 +37,4 @@ module.exports = {
         })
     }
 }
+    
