@@ -1,6 +1,6 @@
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production'
-        ? '/shop-online/dist/'
+        ? '/vue-shop/dist/'
         : '/'
 ,
     chainWebpack: config => {
