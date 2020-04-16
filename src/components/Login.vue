@@ -1,5 +1,6 @@
 <template>
   <div class="loginWrapper">
+    <img src="../assets/images/city.jpg" alt="backGroundPicture">
     <div class="loginBox">
       <div class="avaterBox">
         <img src="../assets/images/home-header.png" alt="picture" />
@@ -30,7 +31,7 @@ export default {
   data () {
     return {
       formLogin: {
-        username: 'admin',
+        username: 'Admin',
         password: '123456'
       },
       // 表单验证对象
@@ -69,7 +70,10 @@ export default {
 <style lang="less" scoped>
 .loginWrapper {
   height: 100%;
-  background-color: #2C3848;
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
 .loginBox {
   position: absolute;

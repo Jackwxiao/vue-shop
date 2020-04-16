@@ -16,7 +16,7 @@ import 'nprogress/nprogress.css'
 
 Vue.component('tree-table', ZkTable)
 
-axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
+axios.defaults.baseURL = 'http://106.12.11.162:8888/api/private/v1/'
 // 在 request 拦截器中，展示进度条
 axios.interceptors.request.use(config => {
   NProgress.start()
