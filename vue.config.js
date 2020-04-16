@@ -3,6 +3,24 @@ module.exports = {
         ? '/shop-online/dist/'
         : '/'
 ,
+
+css: {
+    modules: false,
+    extract: true,
+    sourceMap: false,
+    loaderOptions: {
+      css: {},
+      postcss: {
+        plugins: [
+          require('postcss-px2rem')({
+            remUnit: 75
+          })
+        ]
+      }
+    }
+  }
+,
+
     chainWebpack: config => {
         
         // 发布模式
